@@ -13,8 +13,8 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     EditText user,password;
-    Button loginbtn;
-    TextView registerbtn;
+    Button btnlogin;
+    TextView tvregister;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
         setUpUIView();
 
-        loginbtn.setOnClickListener(new View.OnClickListener() {
+        btnlogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(validate())
@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        registerbtn.setOnClickListener(new View.OnClickListener() {
+        tvregister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this,register.class));
@@ -51,8 +51,8 @@ public class MainActivity extends AppCompatActivity {
     {
          user = (EditText)findViewById(R.id.etusername);
          password = (EditText) findViewById(R.id.etpassword);
-         loginbtn =  (Button)findViewById(R.id.btnlogin);
-         registerbtn = (TextView)findViewById(R.id.tvregister);
+         btnlogin =  (Button)findViewById(R.id.tvlogin);
+         tvregister = (TextView)findViewById(R.id.tvregister);
     }
     private Boolean validate()
     {

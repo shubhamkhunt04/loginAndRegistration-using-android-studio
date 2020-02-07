@@ -21,9 +21,20 @@
         android:layout_height="40dp"
         android:layout_marginTop="10dp"
         android:background="#ffffff"
-        android:drawableLeft="@drawable/username"
+        android:drawableLeft="@drawable/userlogo"
         android:hint="@string/username"
         android:paddingLeft="2dp" />
+
+
+    <EditText
+        android:id="@+id/etemail"
+        android:layout_width="206dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="#ffffff"
+        android:inputType="textEmailAddress"
+        android:drawableLeft="@drawable/emaillogo"
+        android:hint="@string/email" />
 
     <EditText
         android:id="@+id/etpassword"
@@ -31,20 +42,19 @@
         android:layout_height="40dp"
         android:layout_marginTop="20dp"
         android:background="#ffffff"
-        android:drawableLeft="@drawable/password"
+        android:drawableLeft="@drawable/passwordlogo"
         android:hint="@string/password" />
 
     <EditText
-        android:id="@+id/edittext_cnf_password"
+        android:id="@+id/etcnfpassword"
         android:layout_width="206dp"
         android:layout_height="40dp"
         android:layout_marginTop="20dp"
         android:background="#ffffff"
-        android:drawableLeft="@drawable/password"
+        android:drawableLeft="@drawable/passwordlogo"
         android:hint="@string/confirm_password" />
-
     <Button
-        android:id="@+id/button_register"
+        android:id="@+id/btnregister"
         android:layout_width="206dp"
         android:layout_height="40dp"
         android:layout_marginTop="20dp"
@@ -65,7 +75,7 @@
             android:textColor="@android:color/black" />
 
         <TextView
-            android:id="@+id/textview_login"
+            android:id="@+id/tvlogin"
             android:layout_width="wrap_content"
             android:layout_height="35dp"
             android:paddingLeft="10dp"
